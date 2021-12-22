@@ -5,22 +5,24 @@ let arrObj = [
     {"person" : "Spencer", "age" : 34, "avatar" : "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Prescription02&hairColor=Blonde&facialHairType=BeardMedium&facialHairColor=Black&clotheType=CollarSweater&clotheColor=PastelRed&eyeType=Dizzy&eyebrowType=SadConcerned&mouthType=Sad&skinColor=Yellow"}
 ];
 
-let picture = $('#avatar');
 let index = 0;
 
-    arrObj.forEach(function (){
+arrObj.forEach(function (){
         $("img").attr("src", arrObj[index].avatar);
-        $("#info").text(arrObj[index].person + arrObj[index].age) ;
+        $("#info").text(arrObj[index].person + arrObj[index].age);
 });
 
 $("#precedent").click(function (){
-    arrObj.forEach(function (){
-        arrObj[index]--;
-        console.log("dfkigjh");
-    })
+    $("img").attr("src", arrObj[index].avatar);
+    $("#info").text(arrObj[index].person + arrObj[index].age);
+    index--;
+    console.log("xcv")
 
-});
+    });
 
 $("#next").click(function (){
+    $("img").attr("src", arrObj[index].avatar);
+    $("#info").text(arrObj[index].person + arrObj[index].age);
     index++;
 });
+
