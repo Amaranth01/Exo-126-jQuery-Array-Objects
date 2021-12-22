@@ -16,9 +16,7 @@ $("#precedent").click(function (){
     $("img").attr("src", arrObj[index].avatar);
     $("#info").text(arrObj[index].person + arrObj[index].age);
     index--;
-    console.log("xcv")
-
-    });
+});
 
 $("#next").click(function (){
     $("img").attr("src", arrObj[index].avatar);
@@ -26,3 +24,23 @@ $("#next").click(function (){
     index++;
 });
 
+//list for Mark
+let image = document.createElement('img');
+
+    $('#div').append(image);
+    $($("#dumbass").get()).attr("src", arrObj[1].avatar);
+    $('.list').html(arrObj[index].person +" " + arrObj[index].age);
+
+    //list for Bill
+let image1 = document.createElement('img');
+
+$('#div2').append(image1);
+$($("#guguss").get()).attr("src", arrObj[index].avatar);
+$('.list1').html(arrObj[1].person +" " + arrObj[1].age);
+
+//list for Spencer
+let image2 = document.createElement('img');
+
+$('#div3').append(image2);
+$($("#blaireau").get()).attr("src", arrObj[2].avatar);
+$('.list2').html(arrObj[2].person +" " + arrObj[2].age);
